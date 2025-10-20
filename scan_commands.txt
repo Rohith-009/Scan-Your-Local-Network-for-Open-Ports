@@ -1,0 +1,13 @@
+
+---
+
+# `scan_commands.txt`
+```text
+# The exact command used for this task:
+sudo nmap -sS 192.168.0.1/24 -oN scan_output.txt
+
+# Other useful commands you can run (optional)
+sudo nmap -sS -sV -O -p- 192.168.0.1/24 -oA scan_output_full
+sudo nmap -sS -sV -p 23,80,1900 192.168.0.1 -oN host_192.168.0.1.txt
+sudo nmap --script vuln -sV 192.168.0.1 -oN vuln_192.168.0.1.txt   # run only with permission
+sudo tshark -i wlan0 -w capture.pcapng
